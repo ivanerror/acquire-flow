@@ -37,7 +37,6 @@ export function Sidebar({ activeSection, setActiveSection, navItems }) {
         <Button
           variant="ghost"
           className="w-full justify-start text-red-500 hover:text-red-600 dark:text-red-500 dark:hover:text-red-400"
-          onClick={() => window.location.reload()}
         >
           <LogOut className="mr-2 h-4 w-4" /> Logout
         </Button>
