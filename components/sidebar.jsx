@@ -32,6 +32,8 @@ export function Sidebar({ activeSection, setActiveSection, navItems }) {
         <Button variant="ghost" className="w-full justify-start" onClick={() => setActiveSection("settings")}>
           <Settings className="mr-2 h-4 w-4" /> Settings
         </Button>
+        
+        <Link href={"/"}>
         <Button
           variant="ghost"
           className="w-full justify-start text-red-500 hover:text-red-600 dark:text-red-500 dark:hover:text-red-400"
@@ -39,6 +41,7 @@ export function Sidebar({ activeSection, setActiveSection, navItems }) {
         >
           <LogOut className="mr-2 h-4 w-4" /> Logout
         </Button>
+        </Link>
       </div>
     </nav>
   );

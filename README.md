@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Acquire Flow
 
-## Getting Started
+Acquire Flow is a Next.js-based web application that provides a modern dashboard interface for buyer and seller interactions. Built with React and styled using Tailwind CSS, it offers a seamless user experience with features like profile management, messaging, and match tracking.
 
-First, run the development server:
+## Features
+
+- 🔐 User Authentication & Onboarding
+- 👤 Buyer & Seller Profiles
+- 💬 Messaging System
+- 🤝 Match Management
+- 🎨 Modern UI with Dark Mode Support
+- 📱 Responsive Design
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+- Node.js (LTS version recommended)
+- npm (comes with Node.js)
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone [your-repository-url]
+cd acquire-flow
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+## Development
+
+To start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application will be available at [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To create a production build:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+To start the production server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project Structure
 
-## Deploy on Vercel
+```
+├── app/                  # Next.js app directory
+│   ├── (auth)/          # Authentication related pages
+│   ├── dashboard/       # Dashboard pages and components
+│   └── layout.js        # Root layout
+├── components/          # Reusable components
+│   ├── ui/             # UI components
+│   └── ...             # Other components
+├── lib/                 # Utility functions and API
+└── public/             # Static assets
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Next.js](https://nextjs.org/) - React framework
+- [React](https://reactjs.org/) - UI library
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [Radix UI](https://www.radix-ui.com/) - Headless UI components
+- [Lucide React](https://lucide.dev/) - Icons
+
+## Scripts
+
+- `npm run dev` - Start development server with Turbopack
+- `npm run build` - Create production build
+- `npm start` - Start production server
+- `npm run lint` - Run ESLint
