@@ -2,7 +2,7 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ChevronDown, Check, Sparkles, ChevronUp, UploadCloud, Wand2 } from "lucide-react";
+import { ChevronDown, Check, Sparkles, ChevronUp, UploadCloud, Wand2, Bot, Lightbulb, AlertTriangle } from "lucide-react";
 import { useState } from "react";
 import { mockGeminiApiCall } from "@/lib/api";
 import { Textarea } from "@/components/ui/textarea";
